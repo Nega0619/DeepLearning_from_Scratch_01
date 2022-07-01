@@ -5,7 +5,7 @@
 입력 - 은닉층 1층 - 출력층으로 이루어진 신경망이 있을 때 <br>
 1. 신경망의 층을 기준으로 3층 신경망이라고 표현<br>
 2. 가중치 층이 2층이므로 2층 신경망이라고 표현
-
+<br>
 ## bias와 활성화 함수가 적용된 신경망 구조도
 
 ![image](https://user-images.githubusercontent.com/80737049/176901108-74dd8ed7-9996-45f3-8958-65c4d56cf637.png)
@@ -18,18 +18,21 @@ h() : 활성화함수. 가중치와 입력데이터의 곱을 다음 노드로 �
 > 
 
 ## 활성화 함수 종류
-
+<br>
 ### sigmoid
-
+<br>
 ![image](https://user-images.githubusercontent.com/80737049/176901152-89be754e-0a1c-41c4-ab4f-c2ae0d9af2a7.png)
 
 y = 1/(1+exp(-x))
 
 ###### 넘파이 브로드캐스트 기능
+
+<br>
+
 넘파이 배열과 스칼라 값의 연산을 넘파이 배열의 원소 각각과 스칼라 값의 연산으로 바꿔 수행하는 것
 
 ###### 배열의 크기뽑기
-
+<br>
 A = np.array([1, 2, 3, 4])일 때 <br>
 
 - np.ndim(A) : 1 : 배열의 차원 수
@@ -39,11 +42,11 @@ A = np.array([1, 2, 3, 4])일 때 <br>
 - A.shape[0] : 4 : 
 
 ### relu
-
+<br>
 ### leakyRelu
-
+<br>
 ### tanh
-
+<br>
 ### softmax 
-
+<br>
 ###
