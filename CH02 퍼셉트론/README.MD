@@ -10,7 +10,10 @@
 
 2개의 입력을 받은 퍼셉트론은 다음과 같이 표기할 수 있습니다.
 
-![image](https://user-images.githubusercontent.com/80737049/176871917-a787a7f9-02e6-4418-8bb9-43689952ef27.png)
+
+<!-- ![image](https://user-images.githubusercontent.com/80737049/176871917-a787a7f9-02e6-4418-8bb9-43689952ef27.png) -->
+
+<img src="https://user-images.githubusercontent.com/80737049/176871917-a787a7f9-02e6-4418-8bb9-43689952ef27.png" width="70%" height="70%">
 
 <br>
 
