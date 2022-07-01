@@ -19,8 +19,11 @@ h() : 활성화함수. 가중치와 입력데이터의 곱을 다음 노드로 �
 
 ## 활성화 함수 종류
 <br>
+
 ### sigmoid
+
 <br>
+
 ![image](https://user-images.githubusercontent.com/80737049/176901152-89be754e-0a1c-41c4-ab4f-c2ae0d9af2a7.png)
 
 y = 1/(1+exp(-x))
