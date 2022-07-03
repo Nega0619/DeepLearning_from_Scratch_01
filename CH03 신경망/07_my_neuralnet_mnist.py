@@ -47,6 +47,8 @@ if __name__ == '__main__':
     os.chdir(os.path.dirname(os.path.realpath(__file__)))
     print(os.getcwd())
 
+    # batch 처리 전
+    print('\nbatch 전')
     x, t = get_data()
     network = init_network()
 
@@ -56,5 +58,20 @@ if __name__ == '__main__':
         p = np.argmax(y)
         if p == t[i]:
             accuracy_count += 1
+
+    print('Accuracy: ', str(float(accuracy_count)/len(x)))
+
+    # batch 처리 후
+    print('\nbatch 후')
+    x, t = get_data()
+    network = init_network()
+
+    batch_size = 100
+    accuracy_count = 0
+    for i in range(0, len(x), batch_size):
+        x_batch = x[i:i+batch_size]
+        y_batch = predict(network, x_batch)
+        p = np.argmax(y_batch, axis = 1)
+        accuracy_count += np.sum(p == t[i:i+batch_size])
 
     print('Accuracy: ', str(float(accuracy_count)/len(x)))
