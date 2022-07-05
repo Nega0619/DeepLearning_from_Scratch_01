@@ -61,7 +61,7 @@ if __name__ == '__main__':
 
     print('Accuracy: ', str(float(accuracy_count)/len(x)))
 
-    # batch 처리 후
+    # batch 처리 후, axis = 1을 해준 것에 유의
     print('\nbatch 후')
     x, t = get_data()
     network = init_network()
