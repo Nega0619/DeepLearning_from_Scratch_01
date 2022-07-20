@@ -1,6 +1,5 @@
-# 가중치와 편향이 적용한 AND Gate 퍼셉트론 적용
-
 import numpy as np
+# 가중치와 편향이 적용한 AND Gate 퍼셉트론 적용
 
 def and_gate(x1, x2):
     x = np.array([x1, x2])

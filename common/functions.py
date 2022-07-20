@@ -1,5 +1,8 @@
 import numpy as np
 
+def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
+
 def softmax(x):
     max_x = np.max(x)
     exp_x = np.exp(x-max_x)
@@ -15,4 +18,4 @@ def cross_entrophy_error(y, t):
         y = y.reshape(1, y.size)
 
     batch_size = y.shape[0]
-    return -np.sum(-t * np.log(y + 1e-7)) / batch_size    
+    return -np.sum(-t * np.log(y + 1e-7)) / batch_size
